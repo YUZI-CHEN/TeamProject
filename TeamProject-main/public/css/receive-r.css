@@ -226,6 +226,8 @@ main {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+
 /* 輸入內容區 */
 #r-postcard-box{
   width: 900px;
@@ -360,6 +362,10 @@ table td{
   right: 135px;
   
 }
+.receipt-record:hover {
+  transform: rotate(-10deg) scale(-1.1, 1.1); /* 懸停時放大並保留翻轉 */
+}
+
 .receipt-record a{
   position:absolute;
   width: 110px;
@@ -399,7 +405,7 @@ table td{
 
 }
 /* 迴紋針 */
-/* id */
+/* 收件 */
 .paper-clip01{
   position: absolute;
   width: 110px;
@@ -410,7 +416,7 @@ table td{
   left: 490px;
 
 }
-/* 收件 */
+/* 寄件 */
 .paper-clip02{
   position: absolute;
   width: 65px;
@@ -420,15 +426,15 @@ table td{
   top:172px;
   right: 405px;
 }
-/* 寄件 */
+/* id */
 .paper-clip03{
   position: absolute;
   width: 65px;
   height: 80px;
   transform-origin: 0 0;
   transform: rotate(-90deg) scale(1, 1);
-  top: 182px;
-  right: 595px;
+  top: 190px;
+  right: 585px;
 
 }
 /* 裝飾區 */
